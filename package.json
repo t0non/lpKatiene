@@ -1,0 +1,17 @@
+{
+  "name": "site-katiene",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "prebuild": "node scripts/generate-seo-sitemap.mjs",
+    "build": "vite build",
+    "postbuild": "node scripts/prerender-portfolio.mjs",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.4",
+    "vite": "^8.2.2"
+  }
+}
