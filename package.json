@@ -5,9 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prebuild": "node scripts/generate-seo-sitemap.mjs",
     "build": "vite build",
-    "postbuild": "node scripts/prerender-portfolio.mjs",
     "preview": "vite preview"
   },
   "devDependencies": {
